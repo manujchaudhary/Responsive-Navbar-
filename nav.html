@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web</title>
+    <link rel="stylesheet" href="stylenav.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Navbar</a></li>
+            <Li> <a href="#">Blog</a></Li>
+            <Li><a href="#"> Products</a></Li>
+            <Li><a href="#">About</a></Li>
+            <Li><a href="#"> Forum</a></Li>
+            <Li> <a href="#">Login </a></Login></Li>
+            <li onClick= Showsidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+ 
+    <ul class="sidebar">
+        <li onClick=Hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <Li> <a href="#">Blog</a></Li>
+        <Li><a href="#"> Products</a></Li>
+        <Li><a href="#">About</a></Li>
+        <Li><a href="#"> Forum</a></Li>
+        <Li> <a href="#">Login </a></Li>
+       
+    </ul> 
+</nav>
+<script>
+    function Showsidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'flex';
+    }
+    function Hidesidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'none'
+    }
+       
+
+  
+</script>
+</body>
+</html>
